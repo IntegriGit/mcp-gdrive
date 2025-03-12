@@ -1,7 +1,7 @@
 FROM node:22.12-alpine AS builder
 
 COPY . /app
-COPY . /tsconfig.json
+COPY tsconfig.json /app/tsconfig.json
 
 WORKDIR /app
 
